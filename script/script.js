@@ -1,6 +1,6 @@
 var margin = {t:50,r:125,b:50,l:125};
-var width = document.getElementById('plot') - margin.r - margin.l,
-    height = document.getElementById('plot') - margin.t - margin.b;
+var width = document.getElementById('plot').clientWidth - margin.r - margin.l,
+    height = document.getElementById('plot').clientHeight - margin.t - margin.b;
 
 var canvas = d3.select('.plot')
     .append('svg')
